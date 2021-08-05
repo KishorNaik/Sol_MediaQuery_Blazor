@@ -1,0 +1,25 @@
+﻿@*https://github.com/EdCharbeneau/BlazorSize/wiki*@
+
+@page "/mediaquerydemo"
+
+@if (this.IsLoading == true)
+{
+    <MediaQuery Media="@Breakpoints.Between("(max-width:576px)","(min-width:320px)")">
+        <Matched>
+            <h1>Small Device</h1>
+        </Matched>
+    </MediaQuery>
+
+    <MediaQuery Media="@Breakpoints.Between("(max-width:768px)","(min-width:576px)")">
+        <Matched>
+            <h1>Medium Device</h1>
+        </Matched>
+    </MediaQuery>
+
+    <MediaQuery Media="@Breakpoints.Between("(max-width:992px)","(min-width:769px)")">
+        <Matched>
+            <h1>Large Device</h1>
+        </Matched>
+    </MediaQuery>
+
+}
